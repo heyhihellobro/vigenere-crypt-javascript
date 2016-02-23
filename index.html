@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Криптосистема Рабина</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<section class="header-section">
+    <div class="container">
+        <div class="row">
+            <div class="header-title">
+                <h1>Криптосистема Рабина</h1>
+            </div>
+        </div>
+
+        <div class="history">
+            <p>Криптосистема Рабина — криптографическая система с открытым ключом, безопасность которой обеспечивается
+                сложностью поиска квадратных корней составного числа. Безопасность системы, как и безопасность метода
+                RSA, обусловлена сложностью разложения на множители больших чисел. Зашифрованное сообщение можно
+                расшифровать 4 способами. Недостатком системы является необходимость выбора истинного сообщения из 4-х
+                возможных.</p>
+        </div>
+
+
+        <div class="calculator col-md-6 col-md-offset-3">
+            <form>
+                <fieldset class="form-group">
+                    <label for="p">Введите текст для шифрования</label>
+                    <textarea rows="4" cols="50" placeholder="Начните вводить текст..." class="form-control"
+                              id="p"></textarea>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="k">Ключ</label>
+                    <input type="text" id="k" class="form-control" placeholder="Введите ключ">
+                </div>
+
+                <br>
+
+                <div style="text-align: center;">
+                    <button type="button" onclick="Encrypt()" class="btn btn-primary">Зашифровать</button>
+                    <button type="button" onclick="Decrypt()" class="btn btn-danger">Дешифровать</button>
+                </div>
+                
+                <br>
+
+                <fieldset class="form-group">
+                    <label for="c">Результат</label>
+                    <textarea rows="4" cols="50" class="form-control" id="c"></textarea>
+                </fieldset>
+            </form>
+        </div>
+
+
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic-ext);
+
+html,
+body {
+  font-family: "Muller","Open Sans", "Segoe UI", "Open Sans", "Arial";
+}
+
+.header-section {
+  .header-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .history {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    img {
+      max-width: 338px;
+    }
+  }
+}
+
+.navbar {
+  ul.navbar-nav {
+    .active {
+      margin-left: 40px !important;
+    }
+  }
+}
+
+form {
+  table {
+    tr {
+      td:last-child {
+        display: none;
+      }
+    }
+  }
+}
